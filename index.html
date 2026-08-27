@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mahmuda Ferdusi — EdTech portfolio spanning learning design, curriculum, research, NLP, training, and community engagement." />
+  <meta name="theme-color" content="#eaf1fb" />
+  <meta property="og:title" content="Mahmuda Ferdusi | EdTech Engineer & Researcher" />
+  <meta property="og:description" content="Learning design, research, curriculum, training, NLP, and community-focused educational technology." />
+  <meta property="og:type" content="website" />
+  <title>Mahmuda Ferdusi | EdTech Engineer & Researcher</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <div class="edtech-world" aria-hidden="true">
+    <canvas id="networkCanvas"></canvas>
+    <div class="grid"></div>
+    <div class="mouse-glow" id="mouseGlow"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+    <div class="floating-layer" id="floatingLayer"></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell glass-panel">
+      <a class="brand magnetic" href="#home" aria-label="Mahmuda Ferdusi home">
+        <span class="brand-mark">MF</span>
+        <span class="brand-text">
+          <strong>Mahmuda Ferdusi</strong>
+          <small>EDTECH · RESEARCH · DESIGN</small>
+        </span>
+      </a>
+
+      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#design">Design Lab</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <span class="nav-indicator" id="navIndicator"></span>
+      </nav>
+
+      <a class="nav-cta magnetic" href="mailto:mahmudaferdusi53@gmail.com">
+        <span>Let’s connect</span>
+        <span class="cta-arrow">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="hero-watermark" aria-hidden="true">LEARN · BUILD · MEASURE</div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal-up">
+          <div class="eyebrow-chip">
+            <span class="status-dot"></span>
+            Educational Technology & Engineering
+          </div>
+
+          <p class="hero-kicker">Learning design with evidence behind it.</p>
+          <h1>I turn learning problems into <span class="gradient-text">systems people can use.</span></h1>
+          <p class="hero-lead">I’m Mahmuda Ferdusi. My work brings together curriculum, educational technology, research, data, training, and community programs — from understanding a learning need to testing what actually improves the experience.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary magnetic" href="#research"><span>See the work</span><b>↘</b></a>
+            <a class="button button-secondary magnetic" href="#design"><span>Enter the design lab</span><b>+</b></a>
+          </div>
+
+          <div class="contact-row" aria-label="Professional links">
+            <a class="contact-pill magnetic" href="https://github.com/MahmudaFerdusi53" target="_blank" rel="noreferrer">
+              <span class="pill-icon">&lt;/&gt;</span><span>GitHub</span><b>↗</b>
+            </a>
+            <a class="contact-pill magnetic" href="https://www.linkedin.com/in/mahmuda-ferdusi-2837b7341/" target="_blank" rel="noreferrer">
+              <span class="pill-icon">in</span><span>LinkedIn</span><b>↗</b>
+            </a>
+            <button class="contact-pill magnetic" id="copyEmail" type="button" data-email="mahmudaferdusi53@gmail.com">
+              <span class="pill-icon">@</span><span>Copy email</span><b>+</b>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-scale" data-tilt>
+          <div class="profile-orbit orbit-one"><span>01</span> Research</div>
+          <div class="profile-orbit orbit-two"><span>02</span> Curriculum</div>
+          <div class="profile-orbit orbit-three"><span>03</span> Data</div>
+          <div class="profile-orbit orbit-four"><span>04</span> Training</div>
+
+          <div class="profile-shell">
+            <div class="profile-grid"></div>
+            <div class="profile-topline">
+              <span class="profile-label">EDTECH PROFILE / MF-01</span>
+              <span class="live-status"><i></i> ACTIVE</span>
+            </div>
+            <div class="portrait-wrap">
+              <img src="assets/mahmuda-ferdusi.png" alt="Portrait of Mahmuda Ferdusi" />
+              <div class="portrait-scan"></div>
+            </div>
+            <div class="profile-footer">
+              <div>
+                <strong>Mahmuda Ferdusi</strong>
+                <span>Education × Technology × Research</span>
+              </div>
+              <div class="profile-badge">BD</div>
+            </div>
+          </div>
+
+          <div class="signal-card signal-a">
+            <span class="signal-icon">⌁</span>
+            <div><small>Research signal</small><strong>Evidence → decision</strong></div>
+          </div>
+          <div class="signal-card signal-b">
+            <span class="signal-icon">◎</span>
+            <div><small>Design signal</small><strong>Need → experience</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container impact-strip reveal-up">
+        <article><span class="impact-number">01</span><div><strong>Peer-reviewed publication</strong><small>NLP · BERT-CNN · sentiment analysis</small></div></article>
+        <article><span class="impact-number">100+</span><div><strong>Participants engaged</strong><small>Hult Prize campus leadership</small></div></article>
+        <article><span class="impact-number">1K+</span><div><strong>Community reach</strong><small>Information & education initiatives</small></div></article>
+        <article><span class="impact-number">2023—</span><div><strong>Applied EdTech research</strong><small>Research assistant experience</small></div></article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-word word-left" aria-hidden="true">PEDAGOGY</div>
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <p class="section-index">01 / ABOUT</p>
+          <div>
+            <h2>Not technology for technology’s sake.</h2>
+            <p>My strongest work sits where learner needs, content, evidence, and delivery meet. That means researching the problem first, structuring the learning experience carefully, and using technology as part of the solution rather than the whole solution.</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <article class="story-card glass-panel reveal-left" data-tilt>
+            <div class="card-topline"><span>MY EDTECH PRACTICE</span><i></i></div>
+            <h3>I work across the full learning loop — from finding the gap to documenting what changed.</h3>
+            <p>My experience includes educational technology research, curriculum and content design, field-data collection and analysis, research documentation, training facilitation, program monitoring and evaluation, event coordination, and community engagement.</p>
+            <p>That mix lets me move between academic research and practical delivery: asking better questions, organizing content, working with people, and turning findings into something a team can act on.</p>
+            <div class="keyword-cloud">
+              <span>Educational Technology</span><span>Learning Design</span><span>Curriculum</span><span>Research</span><span>Program Evaluation</span><span>NLP</span><span>Data Analysis</span><span>Training</span><span>Community Education</span>
+            </div>
+          </article>
+
+          <div class="practice-stack">
+            <article class="practice-card reveal-right" data-tilt>
+              <div class="practice-no">A</div>
+              <div><small>WHEN THE QUESTION IS UNCLEAR</small><h3>I investigate.</h3><p>Field data, literature, needs, context, documentation, and the evidence behind a decision.</p></div>
+            </article>
+            <article class="practice-card reveal-right" data-tilt>
+              <div class="practice-no">B</div>
+              <div><small>WHEN THE LEARNING IS UNSTRUCTURED</small><h3>I design.</h3><p>Objectives, curriculum flow, content, activities, assessment, and the learner journey between them.</p></div>
+            </article>
+            <article class="practice-card reveal-right" data-tilt>
+              <div class="practice-no">C</div>
+              <div><small>WHEN THE PLAN MEETS PEOPLE</small><h3>I coordinate.</h3><p>Training, outreach, facilitation, communication, event operations, and program documentation.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section design-section" id="design">
+      <div class="section-word word-right" aria-hidden="true">DESIGN LAB</div>
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <p class="section-index">02 / DESIGN LAB</p>
+          <div>
+            <h2>A learning problem should leave the room with a plan.</h2>
+            <p>This interactive workflow shows how I frame an EdTech project: understand the learning need, decide what should change, build the experience, support delivery, then evaluate the result.</p>
+          </div>
+        </div>
+
+        <div class="design-console glass-panel reveal-scale">
+          <div class="console-topbar">
+            <div><span class="console-dot red"></span><span class="console-dot yellow"></span><span class="console-dot green"></span></div>
+            <span>MF / LEARNING-SYSTEM-WORKFLOW</span>
+            <span id="designStageLabel">STAGE 01 / 05</span>
+          </div>
+
+          <div class="design-workspace">
+            <div class="design-steps" role="tablist" aria-label="Learning design stages">
+              <button class="design-step active" data-step="0" role="tab" aria-selected="true"><span>01</span><strong>Analyze</strong><small>Need · context · evidence</small></button>
+              <button class="design-step" data-step="1" role="tab" aria-selected="false"><span>02</span><strong>Design</strong><small>Objectives · flow · assessment</small></button>
+              <button class="design-step" data-step="2" role="tab" aria-selected="false"><span>03</span><strong>Develop</strong><small>Content · media · activities</small></button>
+              <button class="design-step" data-step="3" role="tab" aria-selected="false"><span>04</span><strong>Implement</strong><small>Delivery · support · facilitation</small></button>
+              <button class="design-step" data-step="4" role="tab" aria-selected="false"><span>05</span><strong>Evaluate</strong><small>Outcomes · feedback · iteration</small></button>
+            </div>
+
+            <div class="design-progress"><span id="designProgress"></span></div>
+
+            <div class="design-detail" id="designDetail">
+              <div class="detail-signal"><span>INPUT</span><i></i></div>
+              <div class="detail-copy">
+                <p class="detail-code">01 / ANALYZE</p>
+                <h3>Start with the learner, not the tool.</h3>
+                <p>Clarify who the learners are, what is getting in their way, what evidence already exists, and what success should look like before choosing content or technology.</p>
+              </div>
+              <div class="detail-output"><span>OUTPUT</span><strong>Needs assessment · learner profile · problem statement</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="section-word word-left" aria-hidden="true">FIELDWORK</div>
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <p class="section-index">03 / EXPERIENCE</p>
+          <div>
+            <h2>Research desk, training room, event floor.</h2>
+            <p>My experience is not confined to one kind of EdTech work. I have contributed to research, youth-development programs, documentation, campus events, and education-focused community activity.</p>
+          </div>
+        </div>
+
+        <div class="experience-console">
+          <div class="experience-tabs reveal-left" role="tablist" aria-label="Experience roles">
+            <button class="experience-tab active" data-panel="research" role="tab" aria-selected="true"><span>2023 — Present</span><strong>Research Assistant</strong><small>Educational Technology Innovation</small></button>
+            <button class="experience-tab" data-panel="bysdo" role="tab" aria-selected="false"><span>2023</span><strong>Career & Research Intern</strong><small>BYSDO</small></button>
+            <button class="experience-tab" data-panel="hult" role="tab" aria-selected="false"><span>2024</span><strong>Head of Media & Documentation</strong><small>Hult Prize UFTB</small></button>
+            <button class="experience-tab" data-panel="badhan" role="tab" aria-selected="false"><span>2022 — 2024</span><strong>Information & Education Affairs Secretary</strong><small>Badhan · UFTB Unit</small></button>
+          </div>
+
+          <div class="experience-panels reveal-right">
+            <article class="experience-panel active glass-panel" data-panel="research">
+              <p class="panel-kicker">UNIVERSITY OF FRONTIER TECHNOLOGY, BANGLADESH</p>
+              <h3>Research Assistant — Educational Technology Innovation Project</h3>
+              <ul>
+                <li>Contributed to applied EdTech research, curriculum design frameworks, and program-evaluation methods.</li>
+                <li>Collected, cleaned, and analyzed field data used to support program-improvement decisions.</li>
+                <li>Prepared research reports, progress documentation, and technical write-ups aligned with academic standards.</li>
+                <li>Worked with faculty supervisors and interdisciplinary team members to deliver project milestones.</li>
+              </ul>
+              <div class="panel-tags"><span>EdTech Research</span><span>Curriculum</span><span>Data Analysis</span><span>Program Evaluation</span></div>
+            </article>
+
+            <article class="experience-panel glass-panel" data-panel="bysdo" hidden>
+              <p class="panel-kicker">BANGLADESH YOUTH SKILLS DEVELOPMENT ORGANIZATION</p>
+              <h3>Intern — Career Development & Research Department</h3>
+              <ul>
+                <li>Supported planning and delivery of youth career-development and vocational-skills programs.</li>
+                <li>Managed program documentation, activity monitoring, and outcome reporting.</li>
+                <li>Contributed to stakeholder meetings and community-awareness campaigns.</li>
+              </ul>
+              <div class="panel-tags"><span>Youth Development</span><span>Monitoring</span><span>Documentation</span><span>Outreach</span></div>
+            </article>
+
+            <article class="experience-panel glass-panel" data-panel="hult" hidden>
+              <p class="panel-kicker">HULT PRIZE UFTB · 2024</p>
+              <h3>Head of Media and Documentation</h3>
+              <ul>
+                <li>Led media and documentation work for the university-level Hult Prize competition.</li>
+                <li>Coordinated promotional communication, event coverage, and documentation for 100+ participants.</li>
+                <li>Produced post-event reporting and institutional records for the competition.</li>
+              </ul>
+              <div class="panel-tags"><span>Leadership</span><span>Media</span><span>Event Operations</span><span>Reporting</span></div>
+            </article>
+
+            <article class="experience-panel glass-panel" data-panel="badhan" hidden>
+              <p class="panel-kicker">BADHAN · UFTB UNIT</p>
+              <h3>Secretary — Information and Education Affairs</h3>
+              <ul>
+                <li>Managed information dissemination and educational-awareness activities for a university community of 1,000+ members.</li>
+                <li>Organized seminars, workshops, and educational events around literacy, health awareness, and community welfare.</li>
+                <li>Maintained member records and regular activity reports for unit leadership.</li>
+              </ul>
+              <div class="panel-tags"><span>Community Education</span><span>Workshops</span><span>Communication</span><span>Records</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research-section" id="research">
+      <div class="section-word word-right" aria-hidden="true">NLP · BERT · CNN</div>
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <p class="section-index">04 / RESEARCH</p>
+          <div>
+            <h2>From war discourse to topic-level sentiment.</h2>
+            <p>I co-authored a peer-reviewed study using a hybrid BERT-CNN approach to examine topic-wise sentiment in social-media discourse about the Russia-Ukraine war.</p>
+          </div>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card glass-panel reveal-left" data-tilt>
+            <div class="publication-label"><span>PEER-REVIEWED PUBLICATION</span><i></i></div>
+            <h3>Words of War: A Hybrid BERT-CNN Approach for Topic-Wise Sentiment Analysis on the Russia-Ukraine War</h3>
+            <p>The work combines contextual language representation with convolutional feature extraction to support topic-wise sentiment analysis. My contribution reflects hands-on experience with NLP methodology, model evaluation, and academic writing.</p>
+            <div class="panel-tags"><span>BERT</span><span>CNN</span><span>NLP</span><span>Sentiment Analysis</span><span>Deep Learning</span></div>
+          </article>
+
+          <div class="model-lab glass-panel reveal-right">
+            <div class="lab-title"><span>MODEL FLOW / LIVE DIAGRAM</span><i class="lab-live"></i></div>
+            <div class="model-flow" id="modelFlow">
+              <div class="model-node input-node"><small>01</small><strong>Text</strong><span>social discourse</span></div>
+              <div class="flow-link"><i></i><b>→</b></div>
+              <div class="model-node bert-node"><small>02</small><strong>BERT</strong><span>contextual representation</span></div>
+              <div class="flow-link"><i></i><b>→</b></div>
+              <div class="model-node cnn-node"><small>03</small><strong>CNN</strong><span>feature extraction</span></div>
+              <div class="flow-link"><i></i><b>→</b></div>
+              <div class="model-node output-node"><small>04</small><strong>Sentiment</strong><span>topic-wise output</span></div>
+            </div>
+            <div class="signal-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-word word-left" aria-hidden="true">TOOLKIT</div>
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <p class="section-index">05 / SKILLS</p>
+          <div>
+            <h2>One toolkit, three kinds of work.</h2>
+            <p>The practical overlap matters: research shapes the design, design shapes delivery, and delivery creates the evidence needed for the next iteration.</p>
+          </div>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card reveal-up" data-tilt>
+            <div class="skill-card-head"><span>01</span><div class="skill-icon">⌁</div></div>
+            <h3>Research & Analysis</h3>
+            <p>Turning field information into something structured enough to support a decision.</p>
+            <div class="skill-tags"><span>Data Collection & Analysis</span><span>Research Documentation</span><span>Report Writing</span><span>Program M&E</span><span>Analytical Thinking</span></div>
+          </article>
+          <article class="skill-card reveal-up" data-tilt>
+            <div class="skill-card-head"><span>02</span><div class="skill-icon">✎</div></div>
+            <h3>Learning & Content</h3>
+            <p>Building the structure around what learners need to understand, practice, and apply.</p>
+            <div class="skill-tags"><span>Curriculum & Content Design</span><span>Educational Technology Tools</span><span>Training Facilitation</span><span>Community Engagement</span><span>Stakeholder Communication</span></div>
+          </article>
+          <article class="skill-card reveal-up" data-tilt>
+            <div class="skill-card-head"><span>03</span><div class="skill-icon">&lt;/&gt;</div></div>
+            <h3>Technical & Productivity</h3>
+            <p>Tools for documentation, analysis, presentation, programming, and digital work.</p>
+            <div class="skill-tags"><span>Microsoft Word</span><span>Microsoft Excel</span><span>PowerPoint</span><span>C / C++</span><span>Digital Literacy</span></div>
+          </article>
+        </div>
+
+        <div class="moving-marquee" aria-label="Professional skills">
+          <div class="marquee-track">
+            <span>LEADERSHIP</span><i>•</i><span>TEAM COLLABORATION</span><i>•</i><span>PROJECT MANAGEMENT</span><i>•</i><span>PROBLEM SOLVING</span><i>•</i><span>TIME MANAGEMENT</span><i>•</i><span>COMMUNICATION</span><i>•</i>
+            <span>LEADERSHIP</span><i>•</i><span>TEAM COLLABORATION</span><i>•</i><span>PROJECT MANAGEMENT</span><i>•</i><span>PROBLEM SOLVING</span><i>•</i><span>TIME MANAGEMENT</span><i>•</i><span>COMMUNICATION</span><i>•</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="section-word word-right" aria-hidden="true">LEARNING</div>
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <p class="section-index">06 / EDUCATION & TRAINING</p>
+          <div>
+            <h2>The academic foundation — and the learning around it.</h2>
+            <p>My formal study is in Educational Technology & Engineering, supported by training in digital literacy, employability, cybersecurity, and related development programs.</p>
+          </div>
+        </div>
+
+        <div class="education-grid">
+          <div class="timeline reveal-left">
+            <article><span class="timeline-dot"></span><div class="timeline-date">2020 — Present</div><div><h3>B.Sc. (Hons), Educational Technology & Engineering</h3><p>University of Frontier Technology, Bangladesh</p></div></article>
+            <article><span class="timeline-dot"></span><div class="timeline-date">2020</div><div><h3>Higher Secondary Certificate</h3><p>Rajshahi Government Women’s College · GPA 5.00 / 5.00</p></div></article>
+            <article><span class="timeline-dot"></span><div class="timeline-date">2018</div><div><h3>Secondary School Certificate</h3><p>Masjid Mission Academy, Rajshahi · GPA 5.00 / 5.00</p></div></article>
+          </div>
+
+          <article class="training-panel glass-panel reveal-right" data-tilt>
+            <div class="training-head"><span>CERTIFICATIONS & TRAINING</span><i></i></div>
+            <div class="training-grid">
+              <span>Digital Literacy Course for Youth</span>
+              <span>Wadhwani Employability Skills Program</span>
+              <span>Cyber Security Training · Creative IT Institute</span>
+              <span>HP LIFE · IT for Business Success</span>
+              <span>Environment Olympiad</span>
+              <span>Green Earth Quest</span>
+            </div>
+            <div class="languages"><strong>Languages</strong><span>Bangla · Native</span><span>English · Fluent</span><span>Hindi · Basic</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-word word-left" aria-hidden="true">CONNECT</div>
+      <div class="container">
+        <div class="contact-panel reveal-scale">
+          <div class="contact-copy">
+            <p class="section-index">07 / CONTACT</p>
+            <h2>If the work involves learning, research, or people — I’m interested.</h2>
+            <p>For educational technology, curriculum and content work, research collaboration, training, program evaluation, or related opportunities, the links here go directly to me.</p>
+            <a class="big-email magnetic" href="mailto:mahmudaferdusi53@gmail.com">mahmudaferdusi53@gmail.com <span>↗</span></a>
+          </div>
+
+          <div class="contact-actions">
+            <a class="contact-card magnetic" href="mailto:mahmudaferdusi53@gmail.com"><span class="contact-card-icon">@</span><div><small>EMAIL</small><strong>Write a message</strong></div><b>↗</b></a>
+            <a class="contact-card magnetic" href="https://www.linkedin.com/in/mahmuda-ferdusi-2837b7341/" target="_blank" rel="noreferrer"><span class="contact-card-icon">in</span><div><small>LINKEDIN</small><strong>Connect professionally</strong></div><b>↗</b></a>
+            <a class="contact-card magnetic" href="https://github.com/MahmudaFerdusi53" target="_blank" rel="noreferrer"><span class="contact-card-icon">&lt;/&gt;</span><div><small>GITHUB</small><strong>Explore repositories</strong></div><b>↗</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Mahmuda Ferdusi</strong><span>Educational Technology · Research · Learning Design</span></div>
+      <div>© 2026 Mahmuda Ferdusi</div>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+  <script src="script.js"></script>
+</body>
+</html>
